@@ -18,7 +18,7 @@ public class Demo {
 		config.fullscreen = false;
 		config.width=1000;
 		config.height = 600;
-		config.title="物体运动";
+		config.title="三体运动";
 		new LwjglApplication(new ThreeBodyApp(),config);
 	}
 

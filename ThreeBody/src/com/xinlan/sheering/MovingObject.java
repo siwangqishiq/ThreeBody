@@ -14,7 +14,7 @@ public class MovingObject extends GameObjectBase {
 	protected float mass;//÷ ¡ø
 	
 	public MovingObject() {
-		mass = 1f;
+		mass = 100000f;
 	}
 
 	protected void wapWorld() {

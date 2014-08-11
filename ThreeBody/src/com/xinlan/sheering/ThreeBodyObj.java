@@ -7,6 +7,7 @@ import com.badlogic.gdx.math.Vector2;
 
 public abstract class ThreeBodyObj extends MovingObject
 {
+    public static final float G=1f;//引力常数G
     protected Texture texture;
     protected Sprite mSprite;
     protected ThreeBodyApp mContext;

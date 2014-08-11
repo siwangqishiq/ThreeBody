@@ -7,13 +7,14 @@ import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 public final class ThreeBodyApp implements ApplicationListener {
-	public static final int SC_WIDTH=1000;
-	public static final int SC_HEIGHT=800;
+	public static final int SC_WIDTH=10000;
+	public static final int SC_HEIGHT=8000;
 	public OrthographicCamera camera;//ÉãÏñ»ú
 	private SpriteBatch batch;
 	
 	ThreeBodyObj black;
 	ThreeBodyObj red;
+	ThreeBodyObj blue;
 	
 	@Override
 	public void create() {
@@ -24,6 +25,7 @@ public final class ThreeBodyApp implements ApplicationListener {
 		 
 		 black = new BlackObj(this);
 		 red = new RedObj(this);
+		 blue = new BlueObj(this);
 	}
 	
 	@Override
@@ -37,9 +39,11 @@ public final class ThreeBodyApp implements ApplicationListener {
         batch.begin();
         black.update(delta);
         red.update(delta);
+        blue.update(delta);
         
         black.draw(batch);
         red.draw(batch);
+        blue.draw(batch);
         batch.end();
 	}
 	
@@ -59,5 +63,6 @@ public final class ThreeBodyApp implements ApplicationListener {
 	public void dispose() {
 	    black.dispose();
 	    red.dispose();
+	    blue.dispose();
 	}
 }//end class
