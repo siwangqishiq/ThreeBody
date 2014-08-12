@@ -10,8 +10,8 @@ public class BlueObj extends ThreeBodyObj
     public BlueObj(ThreeBodyApp mContext)
     {
         super(mContext);
-        this.pos.set(7000, 3200);
-        this.velocity.set(-200,200);
+        this.pos.set(7000, 2200);
+        this.velocity.set(-300,0);
     }
 
     @Override

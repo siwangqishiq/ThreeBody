@@ -41,7 +41,6 @@ public abstract class ThreeBodyObj extends MovingObject
             this.velocity.set(0, 0);
         }
         this.wapWorld();
-
         mSprite.setPosition(pos.x, pos.y);
     }
     
@@ -49,6 +48,7 @@ public abstract class ThreeBodyObj extends MovingObject
 
     public void draw(SpriteBatch batch)
     {
+        mSprite.setSize(250, 250);
         mSprite.draw(batch);
     }
     

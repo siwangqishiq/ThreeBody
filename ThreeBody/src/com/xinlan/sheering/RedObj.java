@@ -11,7 +11,7 @@ public class RedObj extends ThreeBodyObj
     {
         super(mContext);
         this.pos.set(6400, 4000);
-        this.velocity.set(200,0);
+        this.velocity.set(400,-110);
     }
 
     @Override

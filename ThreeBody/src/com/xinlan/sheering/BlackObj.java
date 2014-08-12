@@ -11,7 +11,7 @@ public class BlackObj extends ThreeBodyObj
     {
         super(mContext);
         this.pos.set(4800, 3200);
-        this.velocity.set(0, 200);
+        this.velocity.set(-100, 300);
     }
 
     @Override
